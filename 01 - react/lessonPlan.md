@@ -142,7 +142,7 @@ Make sure that learners understand that it isn't necessary to create a construct
 
 Explain that there are a many useful lifecycle methods but for the purposes of this lesson we will be focusing on constructor, render, and componentDidMount.
 
-* Constructor: If your component is a class component the constructor is the first thing that will be called. The constructor gets called with the component props. 
+* Constructor: If the component is a class component the constructor is the first thing that will be called. The constructor gets called with the component props. 
 Ex:
 ```JavaScript
 class MyComponent extends Component {
@@ -203,18 +203,17 @@ err => this.setState({errorMessage: err.message})
 }
 ```
 
-Life code the above code and provide an explanation to learners. Make sure that students are comfortable with the material before introducing the next section.  Provide a brief explanation of conditional rendering before asking students to complete the next section. 
+Live code the above code and provide an explanation to learners. Make sure that students are comfortable with the material before introducing the next section.  Provide a brief explanation of conditional rendering before asking students to complete the next section. 
 
 
 ## Student Do: Conditonal Rendering (15 min)
 
-* This section will involve students implementing code that will display either the SeasonalDisplay component, a loading message or and error message depending on the component's state. If the state contains an errror message and no latitude then we will return an error message. If the latitude is present and there is no error message then we will return our sesonal display. (With latitude passed in as a prop). If both values are absent then we can display a loading message. 
+* This section will involve students implementing code that will display either the SeasonalDisplay component, a loading message or an error message depending on the component's state. If the state contains an errror message and no latitude then we will return an error message. If the latitude is present and there is no error message then we will return our sesonal display (With latitude passed in as a prop). If both values are absent then we can display a loading message. 
 
 * Bonus: Ask students if they can figure out to include conditional rendering inside of :
 
-```
+```JavaScript
 <div className="border red">
-{this.renderContent()}
 </div>
 ```
 
@@ -222,7 +221,7 @@ Life code the above code and provide an explanation to learners. Make sure that 
 
 Present the completed file to learners.
 
-```
+```JavaScript
 //helper function
 
 renderContent(){
